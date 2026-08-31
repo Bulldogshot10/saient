@@ -31,6 +31,8 @@ jobs:
 
       - name: Build APK
         working-directory: android
+        env:
+        SAIENT_ALLOW_DEBUG_RELEASE: "true"
         run: ./gradlew assembleRelease
 
       - name: Upload APK
