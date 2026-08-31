@@ -981,7 +981,7 @@ class SaientDiffusionModule : Module() {
       "--seed", options.seed.toString(),
       "--threads", "6",
       "--diffusion-fa",
-      "--backend", "te=cpu,vae=cpu,diffusion=vulkan0",
+      "--backend", "te=cpu,vae=cpu,diffusion=cpu",
       "--params-backend", "disk",
       "--max-vram", "cpu=0.20,vulkan0=0.75",
       "--vae-tiling",
